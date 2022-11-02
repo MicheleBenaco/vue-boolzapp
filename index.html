@@ -53,16 +53,16 @@
 
                      <!-- chat con le diverse persone  -->
 
-                     <div class="d-flex justify-content-between p-2 cont-card">
+                     <div class="d-flex justify-content-between p-2 cont-card" v-for="(value,index) in contacts" :key="index" >
                         <div class="conteiner-img d-flex align-items-center">
-                            <img src="./img/avatar_1.jpg" alt="" class="rounded-circle" >
+                            <img :src="value.avatar" alt="" class="rounded-circle" >
+                            <h5 class="px-2 text-nowrap">{{value.name}}</h5>
                             <div class="text-nowrap">
-                                <h5 class="px-2">Michele</h5>
-                                <h6>ultimo mesaggio</h6>
+                                <h6>{{value.messages}}</h6>
                             </div>
                         </div>
                         <div class="d-flex">
-                            <h6>12:00</h6>
+                            <h6></h6>
 
                         </div>
                             

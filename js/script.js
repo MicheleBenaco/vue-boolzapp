@@ -4,10 +4,11 @@
         data(){
            
             return{
+                indexMess:0,
                 contacts: [
                     {
                     name: 'Michele',
-                    avatar: '_1',
+                    avatar: './img/avatar_1.jpg',
                     visible: true,
                     messages: [
                      {
@@ -29,7 +30,7 @@
                     },
                     {
                     name: 'Fabio',
-                    avatar: '_2',
+                    avatar: './img/avatar_2.jpg',
                     visible: true,
                         messages: [
                     {
@@ -51,7 +52,7 @@
                     },
                     {
                     name: 'Samuele',
-                    avatar: '_3',
+                    avatar: './img/avatar_3.jpg',
                     visible: true,
                         messages: [
                     {
@@ -73,7 +74,7 @@
                     },
                     {
                     name: 'Alessandro B.',
-                    avatar: '_4',
+                    avatar: './img/avatar_4.jpg',
                     visible: true,
                         messages: [
                     {
@@ -90,7 +91,7 @@
                     },
                     {
                     name: 'Alessandro L.',
-                    avatar: '_5',
+                    avatar: './img/avatar_5.jpg',
                     visible: true,
                         messages: [
                     {
@@ -107,7 +108,7 @@
                     },
                     {
                     name: 'Claudia',
-                    avatar: '_6',
+                    avatar: './img/avatar_6.jpg',
                     visible: true,
                         messages: [
                     {
@@ -129,7 +130,7 @@
                     },
                     {
                     name: 'Federico',
-                    avatar: '_7',
+                    avatar: './img/avatar_7.jpg',
                     visible: true,
                         messages: [
                     {
@@ -146,7 +147,7 @@
                     },
                     {
                     name: 'Davide',
-                    avatar: '_8',
+                    avatar: './img/avatar_8.jpg',
                     visible: true,
                         messages: [
                     {
