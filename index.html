@@ -53,13 +53,14 @@
 
                      <!-- chat con le diverse persone  -->
 
-                     <div class="d-flex justify-content-between p-2 cont-card" v-for="(value,index) in contacts" :key="index" >
+                     <div class="d-flex justify-content-between p-2 cont-card" v-for="(value,index) in contacts" :key="value.id" >
                         <div class="conteiner-img d-flex align-items-center">
                             <img :src="value.avatar" alt="" class="rounded-circle" >
                             
                             <div class="text-nowrap">
                                 <h5 class="px-2">{{value.name}}</h5>
                                 <div></div>
+                                <!-- da chiarire -->
                                 <h6>{{value.messages[value.messages.length - 1].message}}</h6>  
                             </div>
                         </div>
@@ -79,10 +80,10 @@
                 </div>
                 <!-- parte destra con chat  -->
                 <div class="col-8 h-100 g-0">
-                    <div class="d-flex  justify-content-between cont-card">
-                        <div class="conteiner-img d-flex align-items-center">
-                            <img src="./img/avatar_1.jpg" alt="" class="rounded-circle" >
-                            <h5 class="px-2">Michele</h5>
+                    <div class="d-flex  justify-content-between cont-card" >
+                        <div class="conteiner-img d-flex align-items-center" >
+                            <img :src="contacts[currentIndex].avatar" alt="contacts[currentIndex].name" class="rounded-circle" >
+                            <h5 class="px-2">{{contacts[currentIndex].name}}</h5>
                         </div>
                         <div class=" d-flex align-items-center">
                             <i class="fa-solid fa-circle-notch px-2"></i>
@@ -93,15 +94,11 @@
                 </div>
                 <!-- imaggine backgroud -->
                 <div class="img-back">
-                    <div class=" d-flex justify-content-end p-4">
-                        <h6 class="sent"> daje </h6>
+                    <div class=" d-flex justify-content-end p-4" v-for="(valuems,index) in contacts[currentIndex].messages">
+                        <h6 class="sent"> {{valuems.message}} </h6>
                     </div>
-                    <div class=" d-flex justify-content-start p-4">
-                        <h6 class="received"> certo </h6>
                     </div>
-
-                </div>
-                <!-- dove scrivere -->
+                    <!-- dove scrivere -->
                 <div class="d-flex justify-content-between conteiner-write align-items-center">
                     <div class="px-3">
                         <i class="fa-regular fa-face-smile"></i>
@@ -114,6 +111,9 @@
                     </div>
 
                 </div>
+
+                </div>
+                
                 
             </div>
 

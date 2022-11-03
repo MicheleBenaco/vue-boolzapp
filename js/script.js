@@ -7,6 +7,7 @@
                 currentIndex:0,
                 contacts: [
                     {
+                        id:1,
                     name: 'Michele',
                     avatar: './img/avatar_1.jpg',
                     visible: true,
@@ -29,6 +30,7 @@
                     ],
                     },
                     {
+                        id:2,
                     name: 'Fabio',
                     avatar: './img/avatar_2.jpg',
                     visible: true,
@@ -51,6 +53,7 @@
                     ],
                     },
                     {
+                        id:3,
                     name: 'Samuele',
                     avatar: './img/avatar_3.jpg',
                     visible: true,
@@ -73,6 +76,7 @@
                     ],
                     },
                     {
+                        id:4,
                     name: 'Alessandro B.',
                     avatar: './img/avatar_4.jpg',
                     visible: true,
@@ -90,6 +94,7 @@
                     ],
                     },
                     {
+                        id:5,
                     name: 'Alessandro L.',
                     avatar: './img/avatar_5.jpg',
                     visible: true,
@@ -107,6 +112,7 @@
                     ],
                     },
                     {
+                        id:6,
                     name: 'Claudia',
                     avatar: './img/avatar_6.jpg',
                     visible: true,
@@ -129,6 +135,7 @@
                     ],
                     },
                     {
+                        id:7,
                     name: 'Federico',
                     avatar: './img/avatar_7.jpg',
                     visible: true,
@@ -146,6 +153,7 @@
                     ],
                     },
                     {
+                        id:8,
                     name: 'Davide',
                     avatar: './img/avatar_8.jpg',
                     visible: true,
