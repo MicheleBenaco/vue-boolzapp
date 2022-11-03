@@ -4,7 +4,7 @@
         data(){
            
             return{
-                indexMess:0,
+                currentIndex:0,
                 contacts: [
                     {
                     name: 'Michele',

@@ -14,10 +14,10 @@
   <div id="app">
     <div class="genarl-conteiner ">
         <div class="container-whatz bordo container-xxl">
-            <div class="row">
+            <div class="row h-100">
                 <!-- contenitori delle due parti di whatz -->
-                <div class="col-4 conteienr-sx  ">
-                    <div class="d-flex justify-content-between">
+                <div class="col-4 conteienr-sx h-100 g-0">
+                    <div class="d-flex justify-content-between  ">
                         <div class="conteiner-img d-flex align-items-center">
                             <img src="./img/avatar_io.jpg" alt="" class="rounded-circle" >
                             <h5 class="px-2">Lucia</h5>
@@ -56,13 +56,15 @@
                      <div class="d-flex justify-content-between p-2 cont-card" v-for="(value,index) in contacts" :key="index" >
                         <div class="conteiner-img d-flex align-items-center">
                             <img :src="value.avatar" alt="" class="rounded-circle" >
-                            <h5 class="px-2 text-nowrap">{{value.name}}</h5>
+                            
                             <div class="text-nowrap">
-                                <h6>{{value.messages}}</h6>
+                                <h5 class="px-2">{{value.name}}</h5>
+                                <div></div>
+                                <h6>{{value.messages[value.messages.length - 1].message}}</h6>  
                             </div>
                         </div>
                         <div class="d-flex">
-                            <h6></h6>
+                            <h6>{{value.messages[value.messages.length - 1].date}}</h6>
 
                         </div>
                             
@@ -76,7 +78,7 @@
 
                 </div>
                 <!-- parte destra con chat  -->
-                <div class="col-8 ">
+                <div class="col-8 h-100 g-0">
                     <div class="d-flex  justify-content-between cont-card">
                         <div class="conteiner-img d-flex align-items-center">
                             <img src="./img/avatar_1.jpg" alt="" class="rounded-circle" >
@@ -92,7 +94,7 @@
                 <!-- imaggine backgroud -->
                 <div class="img-back">
                     <div class=" d-flex justify-content-end p-4">
-                        <h6 class="sent">Hai portato a spasso il cane </h6>
+                        <h6 class="sent"> daje </h6>
                     </div>
                     <div class=" d-flex justify-content-start p-4">
                         <h6 class="received"> certo </h6>

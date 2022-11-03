@@ -14,13 +14,14 @@ img{
     background-image: linear-gradient(rgb(33, 14, 88), gray);
     background-image: linear-gradient(#00A884 200px, rgb(193, 191, 191) 0%);
     
+    
 }
 /* conteienr app */
 .container-whatz{
     margin: auto;
 }
 .conteiner-img{
-    width: 50px;
+    width: 60px;
     object-fit: cover;
 }
 /* conteienr card */
@@ -34,11 +35,11 @@ img{
 }
 /* conteienr ricerca */
 .conteiner-new-messages{
-    height: 60px;
+    height: 80px;
     background-color: rgb(108, 230, 241);
 }
 .conteiner-ricerca{
-    height: 30px;
+    height: 50px;
     background-color: white;
 }
 .conteiner-write{
@@ -70,5 +71,5 @@ img{
 .img-back{
     background-image: url(../img/mine.jpg);
     width: 100%;
-    height: calc(90vh - 60px);
+    height: 50.6vh;
 }
