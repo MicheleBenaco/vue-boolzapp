@@ -53,7 +53,7 @@
 
                      <!-- chat con le diverse persone  -->
 
-                     <div class="d-flex justify-content-between p-2 cont-card" v-for="(value,index) in contacts" :key="value.id" >
+                     <div class="d-flex justify-content-between p-2 cont-card" :class="index === currentIndex" v-for="(value,index) in contacts" :key="value.id" @click="setChat(value.id)" >
                         <div class="conteiner-img d-flex align-items-center">
                             <img :src="value.avatar" alt="" class="rounded-circle" >
                             
@@ -96,9 +96,14 @@
                 <div class="img-back">
                     <div class=" d-flex justify-content-end p-4" v-for="(valuems,index) in contacts[currentIndex].messages">
                         <h6 class="sent"> {{valuems.message}} </h6>
+                        <div class=" d-flex justify-content-start p-4">
+                        <h6 :class="received"> {{valuems.message}} </h6>
                     </div>
                     </div>
-                    <!-- dove scrivere -->
+                    
+
+                </div>
+                <!-- dove scrivere -->
                 <div class="d-flex justify-content-between conteiner-write align-items-center">
                     <div class="px-3">
                         <i class="fa-regular fa-face-smile"></i>
@@ -111,9 +116,6 @@
                     </div>
 
                 </div>
-
-                </div>
-                
                 
             </div>
 

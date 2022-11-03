@@ -181,7 +181,14 @@
             
            
         },
-        methods:{}
+        methods:{
+            setChat(id){
+                this.currentIndex = this.contacts.findIndex((item)=>{
+                  return  item.id === id 
+                })
+
+            },
+        }
            
             
             
